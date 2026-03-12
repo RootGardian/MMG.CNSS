@@ -105,45 +105,6 @@ nav a:hover, nav a.active {
     color: var(--primary-color);
 }
 
-/* --- Réseaux Sociaux Droite Fixes --- */
-.social-fixe {
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-    z-index: 1000;
-}
-
-.social-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.vertical-label {
-    writing-mode: vertical-rl;
-    color: var(--text-color);
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-}
-
-.vertical-line {
-    width: 1px;
-    height: 50px;
-    background: var(--text-color);
-}
-
-.social-fixe i {
-    color: var(--text-color);
-    font-size: 1.2rem;
-    transition: 0.3s;
-}
-
-.social-fixe i:hover {
-    color: var(--accent-turquoise); /* Touche de Turquoise pour l'ouverture */
-}
-
 /* --- Contenu Central (Hero) --- */
 .scroll-content {
     padding: 120px 10% 100px 10%;
@@ -621,8 +582,7 @@ h1 {
 /* Responsive design */
 @media (max-width: 768px) {
     /* Masquer les éléments fixes sur mobile pour libérer de l'espace */
-    .contact-fixe,
-    .social-fixe {
+    .contact-fixe {
         display: none;
     }
 
